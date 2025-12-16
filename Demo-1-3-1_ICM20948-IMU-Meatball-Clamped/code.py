@@ -137,32 +137,7 @@ while True:
     X_pos += int(X + drift_X)
     Y_pos -= int(Y + drift_Y)
     
-    if Debug:
-        print("X + drift_X", X + drift_X)
-        print("Y + drift_Y", Y + drift_Y)
-
-    if X_pos >= DISPLAY_WIDTH - LOGO_WIDTH:
-        group.x = DISPLAY_WIDTH - LOGO_WIDTH
-        X_pos = DISPLAY_WIDTH - LOGO_WIDTH
-    else:
-        group.x = X_pos
-
-    if X_pos <= 0:
-        group.x = 0
-        X_pos = 0
-    else:
-        group.x = X_pos
-
-    if Y_pos >= DISPLAY_HEIGHT - LOGO_HEIGHT:
-        group.y = DISPLAY_HEIGHT - LOGO_HEIGHT
-        Y_pos = DISPLAY_HEIGHT - LOGO_HEIGHT
-    else:
-        group.y = Y_pos
-
-    if Y_pos <= 0:
-        group.y = 0
-        Y_pos = 0
-    else:
-        group.y = Y_pos
+    group.x = X_pos
+    group.y = Y_pos
 
     time.sleep(0.02)
