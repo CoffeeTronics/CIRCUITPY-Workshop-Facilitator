@@ -2,8 +2,8 @@
 # SPDX-License-Identifier: MIT
 
 """
-This demo will initialize the display using displayio and draw a solid black
-background, a Microchip "Meatball" logo, and move the logo around the screen from the IMU data
+This code simply displays an image of the children's character Bluey and their family.
+The point is to show to quality of the display that is being used in this kit. 
 """
 import board
 import displayio
